@@ -1,0 +1,7 @@
+document.querySelector('#signup-form').addEventListener('submit', (event) => {
+  event.preventDefault();
+  const email = document.querySelector('#email');
+  const message = document.querySelector('#signup-message');
+  message.textContent = `You're on the list, ${email.value}. Welcome to CampusKit!`;
+  event.currentTarget.reset();
+});
